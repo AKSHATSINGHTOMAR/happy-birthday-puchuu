@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <meta name="description" content="A special birthday wish for the most amazing person - Happy Birthday Puchuu!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
     <style>
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -74,9 +79,11 @@
                 transform: translateY(0) rotate(0deg) scale(1);
                 opacity: 0.6;
             }
+
             50% {
                 opacity: 0.8;
             }
+
             100% {
                 transform: translateY(-110vh) rotate(720deg) scale(0.3);
                 opacity: 0;
@@ -104,8 +111,17 @@
         }
 
         @keyframes sparkle {
-            0%, 100% { opacity: 0; transform: scale(0); }
-            50% { opacity: 1; transform: scale(1); }
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         /* === HERO SECTION === */
@@ -139,8 +155,15 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .hero h1 {
@@ -158,9 +181,17 @@
         }
 
         @keyframes shimmer {
-            0% { background-position: 0% center; }
-            50% { background-position: 200% center; }
-            100% { background-position: 0% center; }
+            0% {
+                background-position: 0% center;
+            }
+
+            50% {
+                background-position: 200% center;
+            }
+
+            100% {
+                background-position: 0% center;
+            }
         }
 
         .hero .subtitle {
@@ -177,6 +208,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -195,8 +227,17 @@
         }
 
         @keyframes pulseDown {
-            0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.7; }
-            50% { transform: translateX(-50%) translateY(15px); opacity: 1; }
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(15px);
+                opacity: 1;
+            }
         }
 
         /* === PHOTO SECTION === */
@@ -366,8 +407,13 @@
         }
 
         @keyframes scroll {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
         }
 
         /* === BACKGROUND IMAGE SECTION === */
@@ -426,10 +472,23 @@
         }
 
         @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            15% { transform: scale(1.15); }
-            30% { transform: scale(1); }
-            45% { transform: scale(1.1); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            15% {
+                transform: scale(1.15);
+            }
+
+            30% {
+                transform: scale(1);
+            }
+
+            45% {
+                transform: scale(1.1);
+            }
         }
 
         .footer p {
@@ -498,10 +557,23 @@
         }
 
         @keyframes unwrap {
-            0%, 100% { transform: rotate(-5deg) scale(1); }
-            25% { transform: rotate(5deg) scale(1.1); }
-            50% { transform: rotate(-3deg) scale(1.05); }
-            75% { transform: rotate(3deg) scale(1.08); }
+
+            0%,
+            100% {
+                transform: rotate(-5deg) scale(1);
+            }
+
+            25% {
+                transform: rotate(5deg) scale(1.1);
+            }
+
+            50% {
+                transform: rotate(-3deg) scale(1.05);
+            }
+
+            75% {
+                transform: rotate(3deg) scale(1.08);
+            }
         }
 
         .loading-screen p {
@@ -516,12 +588,15 @@
             .cake-emoji {
                 font-size: 60px;
             }
+
             .wish-card {
                 padding: 25px 20px;
             }
+
             .wish-card .emoji {
                 font-size: 40px;
             }
+
             .music-btn {
                 width: 42px;
                 height: 42px;
@@ -530,6 +605,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
@@ -560,9 +636,7 @@
     <section class="photo-section" id="photo">
         <div class="photo-container">
             <img src="photo-frame.png" alt="Birthday frame" class="photo-frame-img">
-            <!-- Replace 'shefali.jpg' with the actual photo -->
-            <!-- <img src="shefali.jpg" alt="Puchuu" class="actual-photo"> -->
-            <div class="photo-placeholder">💖</div>
+            <img src="shefali.jpg" alt="Puchuu" class="actual-photo">
         </div>
         <p class="photo-label">My Beautiful Puchuu 💕</p>
     </section>
@@ -589,23 +663,28 @@
         <div class="wishes-grid">
             <div class="wish-card">
                 <span class="emoji">🌟</span>
-                <p>May your day be as bright and beautiful as the smile you bring to everyone around you. You deserve all the happiness in the world, Puchuu!</p>
+                <p>May your day be as bright and beautiful as the smile you bring to everyone around you. You deserve
+                    all the happiness in the world, Puchuu!</p>
             </div>
             <div class="wish-card">
                 <span class="emoji">🦋</span>
-                <p>Here's to another year of your incredible journey. May every dream you chase become your reality, and every moment be filled with joy and laughter.</p>
+                <p>Here's to another year of your incredible journey. May every dream you chase become your reality, and
+                    every moment be filled with joy and laughter.</p>
             </div>
             <div class="wish-card">
                 <span class="emoji">💫</span>
-                <p>You make the world a better place just by being in it. Today, I celebrate the amazing person you are — your kindness, your strength, and your beautiful heart.</p>
+                <p>You make the world a better place just by being in it. Today, I celebrate the amazing person you are
+                    — your kindness, your strength, and your beautiful heart.</p>
             </div>
             <div class="wish-card">
                 <span class="emoji">🌸</span>
-                <p>Like a flower that blooms with grace, you bring beauty and warmth wherever you go. Happiest birthday to the most special person in my life!</p>
+                <p>Like a flower that blooms with grace, you bring beauty and warmth wherever you go. Happiest birthday
+                    to the most special person in my life!</p>
             </div>
             <div class="wish-card">
                 <span class="emoji">💖</span>
-                <p>On your special day, I want you to know — you are loved beyond words, cherished beyond measure, and appreciated more than you'll ever know. Happy Birthday, Puchuu! 🎂</p>
+                <p>On your special day, I want you to know — you are loved beyond words, cherished beyond measure, and
+                    appreciated more than you'll ever know. Happy Birthday, Puchuu! 🎂</p>
             </div>
         </div>
     </section>
@@ -772,4 +851,5 @@
         });
     </script>
 </body>
+
 </html>
